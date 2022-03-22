@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+  <link rel="icon" type="image/x-icon" href="assets/image/jsi/logo-1.png">
+  <link rel="icon" type="image/x-icon" href="assets/image/jsi/logo-1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="node_modules/ng2-toastr/bundles/ng2-toastr.min.css" rel="stylesheet" />
+<script src="node_modules/ng2-toastr/bundles/ng2-toastr.min.js"></script>
+</head>
+<style>
+button.btn.btn-light {
+    background-color: hsla(0,0%,100%,.15);
+    border-color: #cdd4d9;
+     transform: translate(53px, 10px);
+    width: 53%;
+}
+p#or {
+    margin: 0px;
+    transform: translate(80px, 10px);
+}
+span#try {
+    transform: translate(99px, -13px) !important;
+    position: absolute;
+    color: #0075dd;
+    text-decoration: underline;
+}
+h5#\35 {
+    text-align: center;
+}
+h5.card-title {
+    text-align: center;
+}
+.bg {
+    background: azure;
+}
+h6#top {
+    text-align: center;
+}
+li#bold {
+    font-weight: 700;
+}
+sapn#see {
+    transform: translate(38px, -19px);
+    text-decoration: underline;
+    color: #0075dd;
+}
+div#plus {
+    transform: translate(19px, 5px);
+    font-size: 16px;
+    font-weight: 700;
+}
+h6#ADD-ONS {
+    text-align: center;
+}
+div#second-box {
+    background: azure;
+}
+p#or {
+    margin-bottom: 15px;
+}
+span#try2 {
+    position: absolute;
+    left: 36%;
+    top: 96.3%;
+        color: #0075dd;
+    text-decoration: underline;
+}
+</style>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="freshbooks-logo.svg">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+<!--      <li class="nav-item active">-->
+<!--        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#">Link</a>-->
+<!--      </li>-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          FEATURE
+        </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown"  >
+          <a class="dropdown-item" href="#">Accounting</a>
+          <a class="dropdown-item" href="#">Apps</a>
+          <a class="dropdown-item" href="#">Clients</a>
+          <a class="dropdown-item" href="#">Estimates</a>
+          <a class="dropdown-item" href="#">Expenses</a>
+          <a class="dropdown-item" href="#">Invoicing</a>
+          <a class="dropdown-item" href="#">Mileage Tracking</a>
+          <a class="dropdown-item" href="#">Mobile</a>
+          <a class="dropdown-item" href="#">Payments</a>
+          <a class="dropdown-item" href="#">Projects</a>
+          <a class="dropdown-item" href="#">Proposals</a>
+          <a class="dropdown-item" href="#">Report</a>
+          <a class="dropdown-item" href="#">Time Tracking</a>
+       </div>
+       </li>
+
+ <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          WHO IT'S FOR
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" style="text-align: center;">Freelancers</a>
+          <a class="dropdown-item" href="#">Self-Employed Professionals</a>
+          <a class="dropdown-item" href="#">Businesses With Contractors</a>
+          <a class="dropdown-item" href="#">Businesses With Employees</a>
+       </div>
+      </li>
+
+<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Resources
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Blog</a>
+          <a class="dropdown-item" href="#">Partners</a>
+          <a class="dropdown-item" href="#">Webinars</a>
+          <a class="dropdown-item" href="#">Reports Library</a>
+           <a class="dropdown-item" href="#">COVID-19</a>
+           <a class="dropdown-item" href="#">Support</a>
+          <a class="dropdown-item" href="#">Accountants</a>
+       </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <div href="#" id="pricing" style="position: absolute;top:15%;left:15%;">Pricing</div>
+
+      <div class="Try" >
+<link rel="stylesheet" type="text/css" href="{% static 'parthapixstone/style.css'%}">
+ <button class="btn btn-success" style="transform: translate(59rem, 0rem);">Try it Free</button>
+</div>
+    </ul>
+
+<!--    <form class="form-inline my-2 my-lg-0">-->
+<!--      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--    </form>-->
+
+  </div>
+</nav>
+
+
+<div class="card" style="    transform: translate(-3px, 23px);background:#fff9e8" >
+  <div class="card-body">
+  <h2>Get 60% Off for 6 Months</h2>
+    <button class="btn btn-success" style="background:#36a900">Buy Now & Save</button><span style=" text-decoration: underline;    position: absolute;">see offer details</span>
+  </div>
+</div>
+
+<div class="container">
+  <h5 style="position: absolute;top:35%;left:40%">MONTHLY</h5>
+  <button class="btn btn-primary" style="position: absolute;left:48%;top:35%;" >Test</button>
+   <h5 style="position: absolute;top:35%;left:54%">YEARLY EXTRA SAVINGS</h5>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+
+    </div>
+    <div class="col-2">
+<div class="card" style="width: 18rem;">
+  <div class="card-body"  id="card2">
+
+    <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Lite</h5>
+    <p style="margin:0px">For professionals with basic</p>
+    <p>needs</p>
+ <div class="bg">
+      <h5 id="5">5 Billable Clients</h5>
+      <button class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or">or</p><span id="try">Try it Free</span>
+ </div>
+  </div>
+    <h6 id="top">TOP FEATURES</h6>
+    <ul>
+        <li id="bold">Send unlimited invoices to up to 5 clients</li>
+        <li>Track unlimited expenses</li>
+        <li>Send unlimited estimates</li>
+        <li>Get paid with credit cards and bank transfers</li>
+        <li>Track sales tax & see reports</li>
+         <li>Access anywhere on iOS and Android</li>
+    </ul>
+    <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
+    <div class="container" id="second-box">
+        <h6 id="ADD-ONS">ADD-ONS</h6>
+        <ul>
+            <li>Team Members ($10/person/mo)</li>
+            <li>Gusto Payroll (See Gusto Pricing)</li>
+        </ul>
+    </div>
+<div>
+       <button class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or">or</p><span id="try2">Try it Free</span>
+</div>
+
+</div>
+    </div>
+    <div class="col-2">
+<div class="card" style="width: 18rem;">
+  <div class="card-body"  id="card2">
+
+    <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Lite</h5>
+    <p style="margin:0px">For professionals with basic</p>
+    <p>needs</p>
+ <div class="bg">
+      <h5 id="5">5 Billable Clients</h5>
+      <button class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or">or</p><span id="try">Try it Free</span>
+ </div>
+  </div>
+    <h6 id="top">TOP FEATURES</h6>
+    <ul>
+        <li id="bold">Send unlimited invoices to up to 50 clients</li>
+        <li>Automatically track expenses</li>
+        <li>Automatically capture receipt data</li>
+        <li>Send unlimited estimates and proposals</li>
+        <li>Get paid with credit cards and bank transfers</li>
+         <li>Set up recurring billing and client retainers</li>
+        <li>Run business health reports</li>
+        <li>Double-entry accounting reports</li>
+        <li>Invite your accountant</li>
+        <li>Access anywhere on iOS and Android</li>
+        <li>Mobile mileage tracking</li>
+    </ul>
+    <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
+    <div class="container" id="second-box">
+        <h6 id="ADD-ONS">ADD-ONS</h6>
+        <ul>
+            <li>Team Members ($10/person/mo)</li>
+            <li>Gusto Payroll (See Gusto Pricing)</li>
+        </ul>
+    </div>
+<div>
+       <button class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or">or</p><span id="try2">Try it Free</span>
+</div>
+
+</div>
+    </div>
+  <div class="col-2">
+<div class="card" style="width: 18rem;">
+  <div class="card-body"  id="card2">
+
+    <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Lite</h5>
+    <p style="margin:0px">For professionals with basic</p>
+    <p>needs</p>
+ <div class="bg">
+      <h5 id="5">5 Billable Clients</h5>
+      <button class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or">or</p><span id="try">Try it Free</span>
+ </div>
+  </div>
+    <h6 id="top">TOP FEATURES</h6>
+    <ul>
+        <li id="bold">Send unlimited invoices to an unlimited amount of clients</li>
+        <li>Track Bills, Bill Payments & Vendors with Accounts Payable</li>
+        <li>Track project profitability</li>
+        <li>Customize email templates with dynamic fields</li>
+        <li>Customize email signatures</li>
+         <li>Automatically track expenses</li>
+    </ul>
+    <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
+    <div class="container" id="second-box">
+        <h6 id="ADD-ONS">ADD-ONS</h6>
+        <ul>
+            <li>Team Members ($10/person/mo)</li>
+            <li>Gusto Payroll (See Gusto Pricing)</li>
+        </ul>
+    </div>
+<div>
+       <button class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or">or</p><span id="try2">Try it Free</span>
+</div>
+
+</div>
+    </div>
+   <div class="col-2">
+<div class="card" style="width: 18rem;">
+  <div class="card-body"  id="card2">
+
+    <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Lite</h5>
+    <p style="margin:0px">For professionals with basic</p>
+    <p>needs</p>
+ <div class="bg">
+      <h5 id="5">5 Billable Clients</h5>
+      <button class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or">or</p><span id="try">Try it Free</span>
+ </div>
+  </div>
+    <h6 id="top">TOP FEATURES</h6>
+    <ul>
+        <li id="bold">Send unlimited invoices to up to 5 clients</li>
+        <li>Track unlimited expenses</li>
+        <li>Send unlimited estimates</li>
+        <li>Get paid with credit cards and bank transfers</li>
+        <li>Track sales tax & see reports</li>
+         <li>Access anywhere on iOS and Android</li>
+    </ul>
+    <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
+    <div class="container" id="second-box">
+        <h6 id="ADD-ONS">ADD-ONS</h6>
+        <ul>
+            <li>Team Members ($10/person/mo)</li>
+            <li>Gusto Payroll (See Gusto Pricing)</li>
+        </ul>
+    </div>
+<div>
+       <button class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or">or</p><span id="try2">Try it Free</span>
+</div>
+
+</div>
+    </div>
+    <div class="col-2">
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
