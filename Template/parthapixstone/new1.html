@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'parthapixstone/style.css'%}">
     <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
   <link rel="icon" type="image/x-icon" href="assets/image/jsi/logo-1.png">
   <link rel="icon" type="image/x-icon" href="assets/image/jsi/logo-1.png">
@@ -90,7 +91,7 @@ span#try2 {
 </style>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <img src="freshbooks-logo.svg">
+    <img class="header_logo" src="{% static 'Image/freshbooks-logo.svg'%}">
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -156,7 +157,6 @@ span#try2 {
         <div href="#" id="pricing" style="position: absolute;top:15%;left:15%;">Pricing</div>
 
       <div class="Try" >
-<link rel="stylesheet" type="text/css" href="{% static 'parthapixstone/style.css'%}">
  <button class="btn btn-success" style="transform: translate(59rem, 0rem);">Try it Free</button>
 </div>
     </ul>
