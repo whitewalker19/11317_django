@@ -1,6 +1,63 @@
-.header_logo {
+.header_log {
     vertical-align: middle;
     border-style: none;
     width: auto;
-    height: 200px;
+    height: 40px;
   }
+
+
+  /* card body */
+  .card-body {
+    height: 446px;
+}
+
+/* image */
+img#gfh {
+    transform: translate(654px, -108px);
+    position: absolute;
+    width: 699px;
+    height: 450px;
+}
+
+/* btn btn-success */
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    transform: translate(160px, 180px);
+}
+
+/* span */
+
+span {
+    transform: translate(164px, 181px);
+}
+
+/* span.navbar-toggler-icon */
+
+span.navbar-toggler-icon {
+    transform: translate(2px, 0px);
+}
+
+/* get 60% */
+
+h2 {
+    transform: translate(89px, 161px);
+}
+
+/* img#ghd */
+
+img#ghd {
+    transform: translate(140px, 129px);
+}
+
+/* button.btn1.btn-success */
+
+button.btn1.btn-success {
+    transform: translate(59rem, 0rem);
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    height: 43px;
+    width: 150px;
+}
