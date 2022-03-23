@@ -13,11 +13,12 @@
 
 /* image */
 img#gfh {
-    transform: translate(654px, -108px);
+    transform: translate(762px, -130px);
     position: absolute;
-    width: 699px;
-    height: 450px;
+    width: 701px;
+    height: 449px;
 }
+
 
 /* btn btn-success */
 .btn-success {
@@ -60,4 +61,67 @@ button.btn1.btn-success {
     border-color: #28a745;
     height: 43px;
     width: 150px;
+}
+
+/* bold */
+li#bold {
+    font-weight: 700;
+}
+
+p#or {
+    transform: translate(78px, 25px);
+}
+
+.second2 {
+    position: absolute;
+    left: 34%;
+    top: 57%;
+}
+
+.Third3 {
+    position: absolute;
+    left: 56.6%;
+}
+
+.Third4 {
+    position: absolute;
+    left: 79.1%;
+}
+
+
+element.style {
+    position: absolute;
+    top: 76%;
+    left: 40%;
+}
+
+h1#df {
+    left: 26%;
+}
+
+h1#qwe {
+    left: 25%;
+}
+
+button#btnn4 {
+    position: absolute;
+    left: 9%;
+    color: #0075dd;
+    top: -50%;
+    height: 87px;
+    border: dotted 2px #0075dd;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h5.h5 {
+    position: absolute;
+    top: 41%;
+    padding: 1rem;
+    left: 11%;
+}
+
+span.slider.round {
+    position: absolute;
+    transform: translate(32rem, 8rem);
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>parthapixstone</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'parthapixstone/style.css'%}">
     <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
@@ -31,30 +31,109 @@
 <script src="node_modules/ng2-toastr/bundles/ng2-toastr.min.js"></script>
 </head>
 <style>
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 button.btn.btn-light {
-    background-color: hsla(0,0%,100%,.15);
+  background-color: hsla(0,0%,100%,.15);
     border-color: #cdd4d9;
-     transform: translate(53px, 10px);
+    height: 48px;
+    transform: translate(67px, 190px);
     width: 53%;
+    border-radius: 9px;
 }
 p#or {
-    margin: 0px;
-    transform: translate(80px, 10px);
+    position: absolute;
+    top: 75%;
+    left: 7%;
 }
 span#try {
-    transform: translate(99px, -13px) !important;
+  transform: translate(-57px, 247px) !important;
     position: absolute;
     color: #0075dd;
     text-decoration: underline;
 }
+h1 {
+    position: absolute;
+    color: #0075dd;
+    height: 11px !important;
+    font-size: 77px;
+    left: 37%;
+    font-family: sans-serif;
+    font-weight: 600;
+}
 h5#\35 {
-    text-align: center;
+  text-align: center;
+    top: 44%;
+    left: 25%;
+    position: absolute;
 }
 h5.card-title {
     text-align: center;
 }
 .bg {
     background: azure;
+}
+.bg {
+  transform: translate(-17px, 10px);
+    width: 110%;
+    height: 299px;
 }
 h6#top {
     text-align: center;
@@ -63,9 +142,21 @@ li#bold {
     font-weight: 700;
 }
 sapn#see {
-    transform: translate(38px, -19px);
-    text-decoration: underline;
+  text-decoration: underline;
     color: #0075dd;
+    position: absolute;
+    top: 91%;
+    left: 10%;
+}
+span#zero {
+    color: #0075dd;
+    position: absolute;
+    top: -61%;
+    border-radius: 50% !important;
+    left: 10%;
+    font-weight: 600;
+    font-size: 34px;
+    height: 10px !important;
 }
 div#plus {
     transform: translate(19px, 5px);
@@ -76,20 +167,104 @@ h6#ADD-ONS {
     text-align: center;
 }
 div#second-box {
-    background: azure;
-}
+  background: azure;
+    transform: translate(0px, -124px);
+} 
 p#or {
     margin-bottom: 15px;
 }
 span#try2 {
     position: absolute;
-    left: 36%;
-    top: 96.3%;
-        color: #0075dd;
+    left: -4%;
+    top: 83.3%;
+    color: #0075dd;
     text-decoration: underline;
 }
+
+span#slash {
+    color: gray;
+    position: absolute;
+    left: 3%;
+    top: -43%;
+}
+
+div#card1 {
+    position: absolute;
+    top: 63%;
+    left: -170%;
+    height: 80rem;
+    transform: translate(-52px, 262px);
+}
+
+
+p#or1 {
+    position: absolute;
+    left: 36%;
+    top: 97.5%;
+}
+p#or2 {
+  margin: 0px;
+    left: 30%;
+    position: absolute;
+    top: 83%;
+}
+div#top1 {
+    transform: translate(0px, -30rem);
+}
+div#professionals {
+    text-align: center;
+}
+button#btn-1 {
+    position: absolute;
+    top: 77%;
+    left: 2%;
+}
+span#dot {
+    color: #0075dd;
+    font-size: 79px;
+    position: absolute;
+    left: 4%;
+    top: -77%;
+}
+span#doller {
+    color: #0075dd;
+    font-size: 29px;
+    position: absolute;
+    left: -24%;
+    font-family: math;
+    top: -56%;
+    font-weight: bold;
+}
+p#was {
+  margin: 0px;
+    position: absolute;
+    color: gray;
+    left: 26%;
+    top: 25%;
+}
+span#\31 5\$ {
+  position: absolute;
+    top: -35%;
+    left: -10%;
+    color: gray;
+    text-decoration: line-through;
+}
+spa#save {
+  position: absolute;
+    left: 53%;
+    top: 25%;
+    text-decoration: underline;
+    color: gray;
+}
+div#top1\ top2 {
+    position: absolute;
+    top: 40%;
+}
+
+ 
 </style>
-<body>
+<body> 
+ 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <img class="header_log" src="{% static 'Image/freshbooks-logo.svg'%}">
 
@@ -173,16 +348,24 @@ span#try2 {
 <div class="card" style="    transform: translate(-3px, 23px);background:#fff9e8" >
   <div class="card-body">
     <img class="header_logo" id="ghd" src="{% static 'Image/tax-time-sale-tag.svg'%}">
+
   <h2>Get 60% Off for 6 Months</h2>
+  
     <button class="btn btn-success">Buy Now & Save</button><span class="gthd" style=" text-decoration: underline;    position: absolute;">see offer details</span>
     <img class="header_logo" id="gfh" src="{% static 'Image/images.jpg'%}"> 
   </div>
 </div>
 
 <div class="container">
-  <h5 style="position: absolute;top:35%;left:40%">MONTHLY</h5>
-  <button class="btn btn-primary" style="position: absolute;left:48%;top:35%;" >Test</button>
-   <h5 style="position: absolute;top:35%;left:54%">YEARLY EXTRA SAVINGS</h5>
+  <div id="switch">
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <h5 id="position"style="position: absolute;top:77%;left:40%">MONTHLY</h5>
+    <h5 Id="kl"style="position: absolute;top:77%;left:54%">YEARLY EXTRA SAVINGS</h5>
 </div>
 
 <div class="container">
@@ -191,28 +374,44 @@ span#try2 {
 
     </div>
     <div class="col-2">
-<div class="card" style="width: 18rem;">
+<div id="card1" class="card">
   <div class="card-body"  id="card2">
 
     <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Lite</h5>
-    <p style="margin:0px">For professionals with basic</p>
-    <p>needs</p>
+    <div id="professionals">
+     
+      <p style="margin:0px">For professionals with basic</p>
+      
+      <p>needs</p>
+      <img class="header_log" src="{% static 'Image/ribbon.svg'%}">
+    </div>
+ 
  <div class="bg">
-      <h5 id="5">5 Billable Clients</h5>
+
+    <span id="doller">$</span>  <h1>6</h1><span id="dot">.</span><span id="zero">00</span><span id="slash">/mo</span>
+
+ 
+      <p id="was">Was:</p> <span id="15$">$15.00</span><spa id="save">Save $54.00</spa>
+     <h5 id="5">5 Billable Clients</h5>
       <button class="btn btn-light" style="color:green">Buy Now</button>
-      <p id="or">or</p><span id="try">Try it Free</span>
+      <p id="or2">or</p><span id="try">Try it Free</span>
  </div>
   </div>
+  <div id="top1">
     <h6 id="top">TOP FEATURES</h6>
     <ul>
-        <li id="bold">Send unlimited invoices to up to 5 clients</li>
-        <li>Track unlimited expenses</li>
-        <li>Send unlimited estimates</li>
-        <li>Get paid with credit cards and bank transfers</li>
-        <li>Track sales tax & see reports</li>
-         <li>Access anywhere on iOS and Android</li>
-    </ul>
-    <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
+      <li id="bold">Send unlimited invoices to up to 5 clients</li>
+      <li>Track unlimited expenses</li>
+      <li>Send unlimited estimates</li>
+      <li>Get paid with credit cards and bank transfers</li>
+      <li>Track sales tax & see reports</li>
+       <li>Access anywhere on iOS and Android</li>
+  </ul>
+  <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
+  </div>
+  
+   
+
     <div class="container" id="second-box">
         <h6 id="ADD-ONS">ADD-ONS</h6>
         <ul>
@@ -221,131 +420,224 @@ span#try2 {
         </ul>
     </div>
 <div>
-       <button class="btn btn-light" style="color:green">Buy Now</button>
-      <p id="or">or</p><span id="try2">Try it Free</span>
+       <button id="btn-1" class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or1">or</p><span id="try2">Try it Free</span>
 </div>
 
 </div>
     </div>
-    <div class="col-2">
-<div class="card" style="width: 18rem;">
+    <div class="second2">
+ <div class="col-2">
+<div id="card1" class="card">
   <div class="card-body"  id="card2">
 
-    <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Lite</h5>
-    <p style="margin:0px">For professionals with basic</p>
-    <p>needs</p>
+    <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Plus</h5>
+    <div id="professionals">
+     
+      <p style="margin:0px">For owners looking for more automation and insights</p>
+      
+ 
+      <img class="header_log" src="{% static 'Image/ribbon.svg'%}">
+    </div>
+ 
  <div class="bg">
-      <h5 id="5">5 Billable Clients</h5>
+
+    <span id="doller">$</span>  <h1 id="df">10</h1><span id="dot">.</span><span id="zero">00</span><span id="slash">/mo</span>
+
+ 
+      <p id="was">Was:</p> <span id="15$">$25.00</span><spa id="save">Save $90.00</spa>
+     <h5 id="5">50 Billable Clients</h5>
       <button class="btn btn-light" style="color:green">Buy Now</button>
-      <p id="or">or</p><span id="try">Try it Free</span>
+      <p id="or2">or</p><span id="try">Try it Free</span>
  </div>
   </div>
-    <h6 id="top">TOP FEATURES</h6>
-    <ul>
+   
+    <div id="top1 top2" >
+      <h6 id="top">TOP FEATURES</h6>
+      <ul>
         <li id="bold">Send unlimited invoices to up to 50 clients</li>
         <li>Automatically track expenses</li>
         <li>Automatically capture receipt data</li>
         <li>Send unlimited estimates and proposals</li>
         <li>Get paid with credit cards and bank transfers</li>
          <li>Set up recurring billing and client retainers</li>
-        <li>Run business health reports</li>
-        <li>Double-entry accounting reports</li>
-        <li>Invite your accountant</li>
-        <li>Access anywhere on iOS and Android</li>
-        <li>Mobile mileage tracking</li>
-    </ul>
-    <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
-    <div class="container" id="second-box">
-        <h6 id="ADD-ONS">ADD-ONS</h6>
-        <ul>
-            <li>Team Members ($10/person/mo)</li>
-            <li>Gusto Payroll (See Gusto Pricing)</li>
-        </ul>
-    </div>
-<div>
-       <button class="btn btn-light" style="color:green">Buy Now</button>
-      <p id="or">or</p><span id="try2">Try it Free</span>
-</div>
-
-</div>
-    </div>
-  <div class="col-2">
-<div class="card" style="width: 18rem;">
-  <div class="card-body"  id="card2">
-
-    <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Lite</h5>
-    <p style="margin:0px">For professionals with basic</p>
-    <p>needs</p>
- <div class="bg">
-      <h5 id="5">5 Billable Clients</h5>
-      <button class="btn btn-light" style="color:green">Buy Now</button>
-      <p id="or">or</p><span id="try">Try it Free</span>
- </div>
-  </div>
-    <h6 id="top">TOP FEATURES</h6>
-    <ul>
-        <li id="bold">Send unlimited invoices to an unlimited amount of clients</li>
-        <li>Track Bills, Bill Payments & Vendors with Accounts Payable</li>
-        <li>Track project profitability</li>
-        <li>Customize email templates with dynamic fields</li>
-        <li>Customize email signatures</li>
-         <li>Automatically track expenses</li>
-    </ul>
-    <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
-    <div class="container" id="second-box">
-        <h6 id="ADD-ONS">ADD-ONS</h6>
-        <ul>
-            <li>Team Members ($10/person/mo)</li>
-            <li>Gusto Payroll (See Gusto Pricing)</li>
-        </ul>
-    </div>
-<div>
-       <button class="btn btn-light" style="color:green">Buy Now</button>
-      <p id="or">or</p><span id="try2">Try it Free</span>
-</div>
-
-</div>
-    </div>
-   <div class="col-2">
-<div class="card" style="width: 18rem;">
-  <div class="card-body"  id="card2">
-
-    <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Lite</h5>
-    <p style="margin:0px">For professionals with basic</p>
-    <p>needs</p>
- <div class="bg">
-      <h5 id="5">5 Billable Clients</h5>
-      <button class="btn btn-light" style="color:green">Buy Now</button>
-      <p id="or">or</p><span id="try">Try it Free</span>
- </div>
-  </div>
-    <h6 id="top">TOP FEATURES</h6>
-    <ul>
-        <li id="bold">Send unlimited invoices to up to 5 clients</li>
-        <li>Track unlimited expenses</li>
-        <li>Send unlimited estimates</li>
-        <li>Get paid with credit cards and bank transfers</li>
-        <li>Track sales tax & see reports</li>
+         <li>Run business health reports</li>
+         <li>Double-entry accounting reports</li>
+         <li>Invite your accountant</li>
          <li>Access anywhere on iOS and Android</li>
+         <li>Mobile mileage tracking</li>
+         
+         
     </ul>
     <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
+    </div>
+  
+
+  
+   
+
     <div class="container" id="second-box">
         <h6 id="ADD-ONS">ADD-ONS</h6>
         <ul>
+            <li>Advanced Payments ($20/mo)</li>
             <li>Team Members ($10/person/mo)</li>
             <li>Gusto Payroll (See Gusto Pricing)</li>
         </ul>
     </div>
 <div>
-       <button class="btn btn-light" style="color:green">Buy Now</button>
-      <p id="or">or</p><span id="try2">Try it Free</span>
+       <button id="btn-1" class="btn btn-light" style="color:green">Buy Now</button>
+      <p id="or1">or</p><span id="try2">Try it Free</span>
 </div>
 
 </div>
     </div>
-    <div class="col-2">
-
     </div>
+   
+    <div class="Third3">
+      <div class="col-2">
+     <div id="card1" class="card">
+       <div class="card-body"  id="card2">
+     
+         <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Premium</h5>
+         <div id="professionals">
+          
+           <p style="margin:0px">For growing businesses that want to empower employees</p>
+           
+      
+           <img class="header_log" src="{% static 'Image/ribbon.svg'%}">
+         </div>
+      
+      <div class="bg">
+     
+         <span id="doller">$</span>  <h1 id="qwe">20</h1><span id="dot">.</span><span id="zero">00</span><span id="slash">/mo</span>
+     
+      
+           <p id="was">Was:</p> <span id="15$">$50.00</span><spa id="save">Save $180.00</spa>
+          <h5 id="5">50 Billable Clients</h5>
+           <button class="btn btn-light" style="color:green">Buy Now</button>
+           <p id="or2">or</p><span id="try">Try it Free</span>
+      </div>
+       </div>
+        
+         <div id="top1 top2" >
+           <h6 id="top">TOP FEATURES</h6>
+           <ul>
+             <li id="bold">Send unlimited invoices to an unlimited amount of clients</li>
+             <li  id="bold">Track Bills, Bill Payments & Vendors with Accounts Payable</li>
+             <li  id="bold">Track project profitability</li>
+             <li  id="bold">Customize email templates with dynamic fields</li>
+             <li  id="bold">Customize email signatures</li>
+              <li>Automatically track expenses</li>
+              <li>Automatically capture bills and receipt data</li>
+              <li>Automatically send late payment reminders and bill late fee</li>
+              <li>Send unlimited estimates and proposals</li>
+              <li>Get paid with credit cards and bank transfers</li>
+              <li>Set up recurring billing and client retainerss</li>
+              <li>Run business health reports</li>
+              <li>Run financial and accounting reports</li>
+              <li>Invite your accountant</li>
+              <li>Access anywhere on iOS and Android</li>
+              <li>Mobile mileage tracking</li>
+              
+              
+              
+         </ul>
+         <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
+         </div>
+       
+     
+       
+        
+     
+         <div class="container" id="second-box">
+             <h6 id="ADD-ONS">ADD-ONS</h6>
+             <ul>
+              <li>Advanced Payments ($20/mo)</li>
+              <li>Team Members ($10/person/mo)</li>
+              <li>Gusto Payroll (See Gusto Pricing)</li>
+             </ul>
+         </div>
+     <div>
+            <button id="btn-1" class="btn btn-light" style="color:green">Buy Now</button>
+           <p id="or1">or</p><span id="try2">Try it Free</span>
+     </div>
+     
+     </div>
+         </div>
+         </div> 
+             <div class="Third4">
+              <div class="col-2">
+             <div id="card1" class="card">
+               <div class="card-body"  id="card2">
+             
+                 <h5 class="card-title" style="color: #0075dd;font-size: 1.625rem;">Select</h5>
+                 <div id="professionals">
+                  
+                   <p style="margin:0px">For businesses with more complex needs</p>
+                   
+              
+                   <img class="header_log" src="{% static 'Image/ribbon.svg'%}">
+                 </div>
+              
+              <div class="bg">
+
+              
+             
+                <button id="btnn4" class="btn btn-light" >Custom Pricing</button>
+               
+                  <h5 class="h5">Unlimited Billable Clients and Specialized Features</h5>
+                   <button class="btn btn-light" style="color:green">Buy Now</button>
+                   <p id="or2">or</p><span id="try">Try it Free</span>
+              </div>
+               </div>
+                
+                 <div id="top1 top2" >
+                   <h6 id="top">TOP FEATURES</h6>
+                   <ul>
+                     <li id="bold">Send unlimited invoices to an unlimited amount of clients</li>
+                     <li  id="bold">Access to lower credit card transaction rates and capped ACH fees</li>
+                     <li  id="bold">Start with 2 team member accounts</li>
+                     <li  id="bold">Get a dedicated account manager</li>
+                     <li  id="bold">Get help migrating from other software</li>
+                      <li  id="bold">Set up your account with custom onboarding services</li>
+                      <li  id="bold">Remove FreshBooks branding from client emails</li>
+                      <li>Contact us with a dedicated support number</li>
+                      <li>Get paid with credit cards, bank transfers, and checkout links</li>
+                      <li>Set up recurring billing, subscriptions and client retainers</li>
+                      <li>Securely accept credit cards over the phone</li>
+                      <li>Automatically track expenses</li>
+                      <li>Automatically send late payment reminders and bill late fees</li>
+                      <li>Invite your accountant</li>
+                      <li>Run business health reports</li>
+                      <li>Run financial and accounting reports</li>
+                      <li>Access anywhere on iOS and Android</li>
+                      
+                      
+                      
+                 </ul>
+                 <div id="plus">+</div><sapn id="see"> See Full Plan Details</sapn>
+                 </div>
+               
+             
+               
+                
+             
+                 <div class="container" id="second-box">
+                     <h6 id="ADD-ONS">ADD-ONS</h6>
+                     <ul>
+                      <li>Advanced Payments ($20/mo)</li>
+                      <li>Team Members ($10/person/mo)</li>
+                      <li>Gusto Payroll (See Gusto Pricing)</li>
+                     </ul>
+                 </div>
+             <div>
+                    <button id="btn-1" class="btn btn-light" style="color:green">Buy Now</button>
+                   <p id="or1">or</p><span id="try2">Try it Free</span>
+             </div>
+             
+             </div>
+                 </div>
+                 </div>
   </div>
 </div>
 </body>
