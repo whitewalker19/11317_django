@@ -125,3 +125,31 @@ span.slider.round {
     position: absolute;
     transform: translate(32rem, 8rem);
 }
+
+p {
+    color: #3a5598;
+}
+
+h2 {
+    color: #3a5598;
+}
+
+h5#position {
+    color: #3a5598;
+}
+
+h5#kl {
+    color: #3a5598;
+}
+
+li {
+    color: #3a5598;
+}
+
+.bg {
+    background: #f56006;
+}
+
+.bg-light {
+    background-color: #f56006!important;
+}
